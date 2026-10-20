@@ -1,0 +1,241 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "coin_bone"
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "coin_bone_end"
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "coin_bone_end_end"
+										origin = [ 1.814941, 3.688911, -5.379997 ]
+										angles = [ 0.0, 0.0, 0.0 ]
+										do_not_discard = false
+									},
+								]
+								origin = [ 0.962532, 2.244802, -2.817612 ]
+								angles = [ 0.0, 0.0, 0.0 ]
+								do_not_discard = false
+							},
+						]
+						origin = [ 11.491328, 1.003582, -3.706986 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						do_not_discard = false
+					},
+					{
+						_class = "Bone"
+						name = "sphere_bone"
+						origin = [ 0.0, 0.0, 0.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						do_not_discard = false
+					},
+				]
+			},
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "initialshadinggroup.vmat"
+								to = "materials/huntdowntheeggs/pumpkin.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsBodyMarkupList"
+				children = 
+				[
+					{
+						_class = "PhysicsBodyMarkup"
+						target_body = ""
+						tag = ""
+						mass_override = 0.0
+						inertia_scale = 1.0
+						linear_damping = 0.0
+						angular_damping = 0.0
+						linear_drag = 1.0
+						angular_drag = 1.0
+						use_mass_center_override = false
+						mass_center_override = [ 0.0, 0.0, 0.0 ]
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsMeshFromRender"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						renderMeshList = [  ]
+						simplification_params = 
+						{
+							qemError = 0.0
+							maxMeshVertices = 1
+							small_element_threshold = 0.0
+							thin_element_threshold = 0.0
+						}
+					},
+					{
+						_class = "PhysicsHullFromRender"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						renderMeshList = [  ]
+						faceMergeAngle = 20.0
+						maxHullVertices = 32
+						optimization_algorithm = "IFR"
+					},
+					{
+						_class = "PhysicsShapeSphere"
+						parent_bone = "coin_bone"
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						radius = 15.0
+						center = [ 0.0, 0.0, 10.0 ]
+					},
+					{
+						_class = "PhysicsShapeCylinder"
+						parent_bone = "coin_bone"
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						origin = [ 0.0, 0.0, 9.0 ]
+						angles = [ 0.0, 0.0, 0.0 ]
+						length = 20.0
+						radius = 12.0
+						numSides = 16
+					},
+				]
+				leave_body_collision_unmodified = false
+				body_order = "default"
+			},
+			{
+				_class = "HitboxSetList"
+				children = 
+				[
+					{
+						_class = "HitboxSet"
+						name = "default"
+						children = 
+						[
+							{
+								_class = "Hitbox"
+								name = "coin_bone"
+								parent_bone = "coin_bone"
+								surface_property = ""
+								translation_only = false
+								group_id = 0
+								hitbox_mins = [ -10.950069, -26.746489, 0.457214 ]
+								hitbox_maxs = [ 7.373737, 2.854921, 3.774826 ]
+							},
+						]
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "models/huntdowntheeggs/fbx/pumpkin.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "huntdowntheeggs_rotateAction"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/HuntDownTheEggs/animation/huntdowntheeggs_rotateAction.dmx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 60.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+					{
+						_class = "AnimFile"
+						name = "huntdowntheeggs_collect"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/HuntDownTheEggs/animation/huntdowntheeggs_collect.dmx"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 60.0
+						reverse = false
+						additional_anim_files = [  ]
+					},
+				]
+				default_root_bone_name = ""
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}
