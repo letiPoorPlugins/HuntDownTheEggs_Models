@@ -19,8 +19,8 @@ Custom ported prop models for plugin HuntDownTheEggs with animations. These mode
 - [HuntDownTheEggs Swiftly2](https://github.com/letiPoorPlugins/HuntDownTheEggs_SW/)
 
 ## Animations:
-`huntdowntheeggs_rotateAction` - Loop animation of rotating prop
-`huntdowntheEggs_collect` - Collect animation of prop
+- `huntdowntheeggs_rotateAction` - Loop animation of rotating prop
+- `huntdowntheEggs_collect` - Collect animation of prop
 
 ## Showcase
 <div align="center">
